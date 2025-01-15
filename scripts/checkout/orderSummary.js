@@ -13,7 +13,6 @@ export function renderOrderSummary() {
     const productId = cartItem.productId;
 
     const matchingProduct = getProduct(productId);
-    
 
     const deliveryOptionId = cartItem.deliveryOptionId;
 
@@ -45,7 +44,7 @@ export function renderOrderSummary() {
               ${matchingProduct.name}
             </div>
             <div class="product-price">
-             $${matchingProduct.getPrice()}
+              ${matchingProduct.getPrice()}
             </div>
             <div class="product-quantity
               js-product-quantity-${matchingProduct.id}">
